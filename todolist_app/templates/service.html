@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Services - Taskmate</title>
+{% endblock title %}
+
+{% block content %}
+    <div class="container">
+        <br>
+        <h1>{{ service_text }}</h1>
+        <hr style = "font-weight:bold">
+
+        <!--Trinket.io python interpreter-->
+        <h2 style="text-align:center">Trinket.io Interpreter</h2>
+        <iframe src="https://trinket.io/embed/python/3d8d7ce66b?showInstructions=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <br><hr>
+        <!--Repl.it pyhton interpreter-->
+        <h2 style="text-align:center">Repl.it Python Interpreter</h2>
+        <iframe height="400px" width="100%" src="https://repl.it/repls/BluevioletPrimeSource?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+    </div>
+{% endblock content %}
