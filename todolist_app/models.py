@@ -11,4 +11,4 @@ class TaskList(models.Model):
         return self.task + " - " + str(self.done)
 
     class Meta:
-        ordering = ('-created_date')
+        ordering = ('-created_date',)
