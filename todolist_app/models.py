@@ -8,7 +8,7 @@ class TaskList(models.Model):
     created_date = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return self.task + " - " + str(self.done) + " "+ str(self.created_date)
+        return self.task
 
     class Meta:
         ordering = ('-created_date',)
