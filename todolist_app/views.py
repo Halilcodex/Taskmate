@@ -4,8 +4,16 @@ from todolist_app.models import TaskList
 from todolist_app.forms import TaskForm
 from django.contrib import messages
 from django.core.paginator import Paginator
+from . import serializers
+from rest_framework import viewsets
 
 # Create your views here.
+
+# View for the api implementation using viewset
+class TaskListViewset(viewsets.ModelViewSet):
+    queryset = TaskList.objects.all()
+    serializer_class = serializers.TaskListSerializer
+
 def index(request):
     context ={
         'index_text':"Welcome to the Home Page"
